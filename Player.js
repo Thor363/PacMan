@@ -42,6 +42,16 @@ class Player {
             this.stop=0-this.degree;
         }
 
+        if(this.x>width){
+            this.x=0;
+        }else if(this.x<0){
+            this.x=width;
+        }else if(this.y>height){
+            this.y=0;
+        }else if(this.y<0){
+            this.y=height;
+        }
+
     }
 
     show(){
